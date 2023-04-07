@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+    background-color:rgb(17, 254, 17)
+}
+/* the logo superimposes abive colour if we use two div navbar and nav and then we use clearfix*/
+nav{ background-color: rgb(62, 123, 71);
+padding: 10px;
+text-decoration: none;
+text-align: left;
+
+}
+.clearfix{
+    display: table;
+    clear: both;
+}
+.navi{
+    text-decoration: none;
+    margin-right: 15px;
+
+}
+.navi:link{
+    color: white
+}
+
+.team{
+    text-align: center;
+    margin-top: 10px;
+}
+.teamcard{
+    display:flex;
+    flex-wrap: wrap;
+   
+    justify-content:space-between;
+    margin-top: 10px;
+}
+.mcard{
+    height: 400px;
+    width:250px;
+    border: 1px solid black;
+    margin: 20px;
+    
+   
+}
+.about{
+    color: green;
+    text-align: center;
+    margin-top:40px;
+}
+.navi:visited{ color: white
+
+}
+.side1{
+    float: left;
+    width: 80%;
+}
+.side2{
+    height:50px;
+    width:10%;
+    float: right;
+    background-image: url(https://logos-download.com/wp-content/uploads/2016/10/BCCI_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.aboutms{
+    line-height: 1.5;
+    margin-top: 20px;
+}
+.navi:hover{ color: rgb(24, 188, 206);
+    text-decoration: underline;
+    
+}
+.container{
+    background-color:rgb(124, 225, 183);
+    width:80%;
+    margin:auto;
+    
+}
+.navi:active{
+    background-color: yellow;
+    color: white;
+}
+.image{ height: 300px;
+    background-size: contain;
+    
+    background: no-repeat url(https://media.gettyimages.com/id/1164550537/photo/panorama-of-beautiful-mount-ama-dablam-in-himalayas-nepal.jpg?s=612x612&w=gi&k=20&c=uiXs0p24vULgq5uUkYcIname4DiQXgI8p5Fv5ZRA9HE=);
+}
+/*3d card css*/
+body{
+    perspective: 800px;
+    background-color: rgb(132, 158, 149);
+}
+.sidea,
+.sideb{
+    height:400px;
+    width:250px;
+    margin:auto;
+    backface-visibility: hidden;
+}
+.card{
+    height: 400px;
+width: 250px;
+/*border: 1px black;*/
+transition-duration: 2s;
+transform-style: preserve-3d;
+
+}
+.sidea{
+    background-color: blue;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6iXozJr8Zpw4c0NOvxkAwIBQrQvRmQfLDpAi7YFV6Ow&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    position: absolute;
+    z-index: 1;
+}
+.sideb{
+    background-color: rgb(152, 172, 133);
+    position: absolute;
+    text-align: center;
+    transform: rotateY(180deg);
+
+}
+.card:hover{
+    transform: rotateY(180deg);
+}

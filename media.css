@@ -1,0 +1,7 @@
+@media (max-width: 768px){
+    .aboutms{
+        height:200px; 
+        border: 3px rgb(167, 77, 77);
+        overflow: scroll;
+    }
+}
