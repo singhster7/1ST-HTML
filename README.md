@@ -1,2 +1,2 @@
-#landing page for an organization
+# landing page for an organization
 Displays information about employees and services
